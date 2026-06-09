@@ -1,0 +1,164 @@
+
+/* LG - SMALL LAPTOPS: 1024px - 1280px */
+
+@media (max-width: 80rem) {
+    /* 1280px / 16px = 80rem (breakpoint we chose divided by default brower font size, then rounded up */
+    /* 80rem x 16px = 1280px (final breakpoint around rounding */
+
+    html {
+      /* 9px / 16px = 56.25% */
+      font-size: 56.25%;
+    }
+
+    section {
+      margin-bottom: 15rem;
+    }
+
+    .primary-flex-container {
+      gap: 8rem;
+    }
+
+    .features-tertiary-content  {
+      gap: 2rem;
+    }
+
+    .blacklist {
+      padding-left: 1.5rem;
+      padding-right: 1rem;
+    }
+    
+    .text {
+      padding: 0 1rem;
+    }
+
+    .graphics-container {
+      gap: 10rem;
+    }
+}
+
+/* MD - TABLETS: 768px - 1024px */
+
+@media (max-width: 64rem) {
+  /* 1280px / 16px = 64rem (breakpoint we chose divided by default brower font size, then rounded up */
+  /* 64rem x 16px = 1024px (final breakpoint around rounding */
+
+  html {
+    font-size: 50%;
+  }
+
+  .primary-flex-container {
+    gap: 7rem;
+  }
+
+  .primary-flex-container-content {
+    transform: translateY(-30px);
+    gap: 2.5rem;
+    max-width: 38rem;
+  }
+
+  .graphics-container {
+    gap: 10rem;
+  }  
+
+  .footer-container {
+    justify-content: space-between;
+  }
+}
+
+/* SM - PHONE LANDSCAPE: 576px - 768px */
+
+@media (max-width: 48rem) {
+  /* 759px / 16px = 48rem (breakpoint we chose divided by default brower font size, then rounded up */
+  /* 48rem x 16px = 768px (final breakpoint around rounding */
+
+  html {
+    font-size: 45%;
+  }
+
+  .primary-flex-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15rem;
+  }
+
+  .primary-flex-container-content {
+    gap: 4rem;
+    max-width: 80rem;
+    text-align: center;
+    align-items: center;
+    transform: translatex(3px)
+  }
+
+  .primary-flex-container-content p {
+    text-align: center;
+  }
+
+  .primary-img {
+    margin-left: 0;
+  }
+
+  /* .features-tertiary-content {
+    flex-wrap: wrap;
+  } */
+
+  .features-tertiary-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .graphics-container {
+    gap: 5rem;
+  }  
+
+  .footer-nav {
+    row-gap: 1rem;
+  column-gap: 4rem; 
+  }
+
+}
+
+/* XS - PHONE PORTRAIT: < 576px */
+
+@media (max-width: 42rem) {
+  /* 530px / 16px = 36rem */
+  /* 36rem x 16px = 576pxpx */
+
+  .main-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  section {
+    margin-bottom: 13rem;
+  }
+
+  .download-btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .graphics-container {
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .footer-nav {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    column-gap: 4rem; 
+    justify-items: center;
+  }
+
+  .nav-item2,.nav-item4 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  
+}
